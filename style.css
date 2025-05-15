@@ -49,7 +49,7 @@ header .header-container {
 /*bare de recherche*/
 .search-form {
     margin-left: 20px;
-    margin-bottom:30px;
+    margin-bottom:4px;
 }
 
 .search-form input {
@@ -72,14 +72,14 @@ header .header-container {
 section{
     color:#333;
     transition: transform 0.7s ease;
-    padding-top: 300px;
+    padding-top: 260px;
     padding-bottom: 140px;
     padding-left: 100px;
     padding-right: 100px;
 }
 
 section:hover{transform: scale(1.08);}
-#intro, #question{color: rgb(0, 72, 121);font-size:35px;font-family:Arial bold;}
+#intro, #question{color: rgb(152, 71, 0);font-size:35px;font-family:Arial bold;}
 #question{font-size:27px;}
 
 nav{font-size: 14px;}
@@ -101,11 +101,11 @@ nav a + a {border-left: 1px solid #ccc;}
 
 /* Style for the image map */
 #map{
-    width:1000px;
+    width:1200px;
 }
 .map-container {
     width: 100%;
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
     overflow: hidden;
     padding: 20px 0;
