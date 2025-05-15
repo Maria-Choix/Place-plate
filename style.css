@@ -1,0 +1,140 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/* Body and Background */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    text-align: center;
+}
+
+#citation {
+    font-style: italic;
+    font-size:18px;
+}
+
+header {
+    background-color: #fff;
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+header .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#logo {
+    height: 70px ;
+    padding-left: 20px;
+    width: auto;
+}
+
+/*bare de recherche*/
+.search-form {
+    margin-left: 20px;
+    margin-bottom:30px;
+}
+
+.search-form input {
+    padding: 8px 12px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+    width: 100%;
+    max-width: 700px;
+    transition: width 0.3s ease;
+}
+
+.search-form input:focus {
+    width: 250px;
+}
+ 
+
+.tt{padding-left:40px;padding-right: 40px;font-size:18px;}
+section{
+    color:#333;
+    transition: transform 0.7s ease;
+    padding-top: 300px;
+    padding-bottom: 140px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+section:hover{transform: scale(1.08);}
+#intro, #question{color: rgb(0, 72, 121);font-size:35px;font-family:Arial bold;}
+#question{font-size:27px;}
+
+nav{font-size: 14px;}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding:10px 50px;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    border-radius: 10px;
+
+}
+nav a + a {border-left: 1px solid #ccc;}
+
+/* Style for the image map */
+#map{
+    width:1000px;
+}
+.map-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 20px 0;
+    transition: transform 0.7s ease;
+}
+
+.map-container:hover {
+    transform: scale(1.1);
+}
+
+/* Area styles (hover effect and basic tooltips) */
+area {outline: none;}
+
+area:hover {
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+
+/* footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+footer p {
+    margin: 20px;
+}
