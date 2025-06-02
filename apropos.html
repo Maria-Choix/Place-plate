@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À propos</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <a href="acceuil.html">
+            <img class="logo" src="../img/logo2.png" alt="Logo">
+        </a>
+        <form class="search-form" action="#" method="get" onsubmit="cherchePays(); return false;">
+            <input type="text" id="barreRecherche" placeholder="Rechercher une place..." name="q">
+            <button id="boutonsearch" type="submit">Go</button>
+        </form>
+        <nav>
+            <a href="menusemaine.html">Menu de la semaine</a>
+            <a href="categories.html">Recettes par catégorie</a>
+            <a href="apropos.html">À propos</a>
+            <a href="don.html">Faire un don</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2 id="qui">Qui sommes-nous ?</h2>
+
+        <section class="profils">
+            <div class="profil">
+                <img src="../img/orlane.jpg" class="nous_photo" alt="Orlane Alfra Ndjibou">
+                <h3>ORLANE NDJIBOU</h3>
+                <p>Co-fondatrice de Plate&Place</p>
+                <p class="description">Recherche culturelle & identité du projet</p>
+                <div class="contact">
+                    <img src="../img/icone4.png" class="icn-contact" alt="Icône contact">
+                    <p>alfra-orlane.ndjibou-madoungou@efrei.net</p>
+                </div>
+                <p>
+                    Orlane est responsable de l’ancrage culturel du projet. Elle réalise les recherches sur l’origine des plats,
+                    leurs significations et le contexte culturel qui les entoure. Côté développement, elle s’est chargée de la
+                    section "Menu de la semaine" et a réalisé la moitié des pages de recettes par pays. Elle a intégré les contenus
+                    culturels tout en structurant les pages de manière claire et cohérente en HTML et CSS.
+                </p>
+            </div>
+
+            <div class="profil">
+                <img src="../img/maria.jpg" class="nous_photo" alt="Maria Choix">
+                <h3>MARIA CHOIX</h3>
+                <p>Co-fondatrice de Plate&Place</p>
+                <p class="description">Stratégie de contenu & pilotage du projet</p>
+                <div class="contact">
+                    <img src="../img/icone4.png" class="icn-contact" alt="Icône contact">
+                    <p>maria.choix@efrei.net</p>
+                </div>
+                <p>
+                    Maria gère l'organisation globale du projet : elle coordonne les tâches, fixe les objectifs
+                    et s'assure que tout avance selon le planning. Côté développement, elle a développé la page d’accueil
+                    avec la carte interactive permettant d'explorer les pays. Elle a aussi contribué à la création de la moitié
+                    des pages de recettes, tout en assurant l’architecture du site et l’intégration des éléments dynamiques.
+                </p>
+            </div>
+        </section> 
+
+        <div>
+            <h3>Lien GitHub</h3>
+            <a href="https://github.com/Maria-Choix/Place-plate"><p>Cliquez ici</p></a>
+        </div>
+        <br>
+
+        <section id="presentation">
+            <div class="col" id="droite">
+                <div>
+                    <div class="icones-txt">
+                        <img src="../img/icone3.png" class="icn" alt="Icône Notre histoire">
+                        <p class="qst">Notre histoire</p>
+                    </div>
+                    <p>
+                        Plate&Place est née de la passion commune de deux personnes pour la cuisine et les voyages.
+                        En tant que deux femmes issues de cultures différentes, nous avons constaté que de nombreuses cuisines
+                        traditionnelles étaient méconnues ou stéréotypées. C’est pourquoi nous avons décidé de créer
+                        Plate&Place pour célébrer la diversité culinaire mondiale et donner une voix à toutes les cuisines,
+                        des plus connues aux plus méconnues. À travers Place&Plate, nous souhaitons construire une
+                        communauté curieuse, bienveillante et gourmande.
+                    </p>
+                </div>
+
+                <div>
+                    <div class="icones-txt">
+                        <img src="../img/icone2.png" class="icn" alt="Icône Pourquoi ce projet ?">
+                        <p class="qst">Pourquoi ce projet ?</p>
+                    </div>
+                    <p>
+                        Nous avons créé Place&Plate pour offrir une expérience de découverte, authentique et sensorielle,
+                        loin des tendances uniformisantes. C’est un hommage à la richesse du monde et une invitation
+                        au respect et à l’ouverture.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="icones-txt">
+                    <img src="../img/icone1.png" class="icn" alt="Icône Ce que nous défendons">
+                    <p class="qst">Ce que nous défendons</p>
+                </div>
+                <ul>
+                    <li><strong>Diversité culinaire :</strong> valoriser toutes les cuisines, même les moins connues</li>
+                    <li><strong>Respect des identités :</strong> chaque plat est le reflet d’un peuple, d’un territoire, d’un vécu</li>
+                    <li><strong>Transmission :</strong> partager un savoir-faire, des goûts et des récits profonds</li>
+                    <li><strong>Voyage par les sens :</strong> découvrir l’Autre à travers l’assiette</li>
+                </ul>
+            </div>
+        </section> <br><br>
+
+        <h2>Sur ce, à vos fourneaux !</h2>
+    </main>
+
+    
+    
+
+    <footer>
+        <div id="footer-logo-nav">
+            <a href="acceuil.html">
+                <img id="logo" src="../img/logo2.png" alt="Logo">
+            </a>
+            <nav>
+                <a href="menusemaine.html">Menu de la semaine</a>
+                <a href="categories.html">Recettes par catégorie</a>
+                <a href="apropos.html">À propos</a>
+                <a href="don.html">Faire un don</a>
+            </nav>
+        </div>
+        <p>© 2025 Plate&Place - Tous droits réservés</p>
+    </footer>
+</body>
+</html>
