@@ -1,55 +1,52 @@
-/* Global Reset */
+
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    align-items:center;
 
 }
 
-/* Body and Background */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
-    text-align: center;
+    text-align:center;
+    padding-top:290px;
 }
 
-#citation {
+.citation {
     font-style: italic;
     font-size:18px;
 }
 
 header {
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 20px 0;
     border-bottom: 1px solid #ddd;
     position: fixed;
     width: 100%;
-    top: 0;
-    left: 0;
     z-index: 100;
+    top:0;
+    left:0;
+    right:0;
 }
 
-header .header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
 
-#logo {
+.logo {
     height: 70px ;
     padding-left: 20px;
     width: auto;
+    margin-bottom: 10px;
 }
 
 /*bare de recherche*/
+#boutonsearch{font-size:13px;background-color:#c35225;margin-left:10px;border-radius:40px;}
+#boutonsearch:hover{background-color: #b71c1c; color:white;} 
 .search-form {
     margin-left: 20px;
     margin-bottom:4px;
+    margin-bottom:30px;
 }
 
 .search-form input {
@@ -59,7 +56,7 @@ header .header-container {
     border-radius: 20px;
     outline: none;
     width: 100%;
-    max-width: 700px;
+    max-width: 500px;
     transition: width 0.3s ease;
 }
 
@@ -67,19 +64,20 @@ header .header-container {
     width: 250px;
 }
  
-
+/**/
 .tt{padding-left:40px;padding-right: 40px;font-size:18px;}
-section{
+
+#acceuil-container, .histoire{
     color:#333;
     transition: transform 0.7s ease;
-    padding-top: 260px;
+  
     padding-bottom: 140px;
     padding-left: 100px;
     padding-right: 100px;
 }
 
-section:hover{transform: scale(1.08);}
-#intro, #question{color: rgb(152, 71, 0);font-size:35px;font-family:Arial bold;}
+#acceuil-container:hover , .histoire:hover{transform: scale(1.08);}
+.intro1, #intro, #question, #qui{color: rgb(152, 71, 0);font-size:35px;font-family:Arial bold;}
 #question{font-size:27px;}
 
 nav{font-size: 14px;}
@@ -89,7 +87,7 @@ nav a {
     color: #333;
     font-weight: bold;
     text-transform: uppercase;
-    padding:10px 50px;
+    padding:5px 50px;
 }
 
 nav a:hover {
@@ -99,7 +97,10 @@ nav a:hover {
 }
 nav a + a {border-left: 1px solid #ccc;}
 
-/* Style for the image map */
+
+/* ---------------------------- */
+/* -----CARTE DU MONDE LIENS------*/
+/* ---------------------------- */
 #map{
     width:1200px;
 }
@@ -109,21 +110,82 @@ nav a + a {border-left: 1px solid #ccc;}
     margin: 0 auto;
     overflow: hidden;
     padding: 20px 0;
-    transition: transform 0.7s ease;
+    transition: transform 0.8s ease;
+    position:relative;
 }
 
-.map-container:hover {
-    transform: scale(1.1);
+.map-container:hover {transform: scale(1.04);}
+
+.point {
+  position: absolute;
+  display: block;       
+  width: 12px;
+  height: 12px;
+  background: rgb(255, 111, 0);
+  border: 2px solid white;
+  border-radius: 50%;
 }
 
-/* Area styles (hover effect and basic tooltips) */
-area {outline: none;}
 
-area:hover {
-    cursor: pointer;
-    opacity: 0.7;
-    transition: opacity 0.3s ease;
-}
+.canada{ top:27%; left:17%;}
+.etatsunis{top:37%;left:20%;}
+.mexique{top:46%;left:20%;}
+.cuba{top:46%;left:26%; }
+.bresil{ top:60%;left:33%;}
+.colombie{top:53%;left:27%;}
+.perou{top:59%; left:26%;}
+.argentine{top:70%;left:29%; }
+.chili{top:75%;left:27%;}
+
+.chine{top:40%;left:73%;}
+.coresud{top:40%; left:81%; }
+.japon{top:40%;left:84%;}
+.inde{top:45%; left:68%;}
+.thailande{ top:49%;left:73%;}
+.vietnam{top:50%;left:75%;}
+.indonesie{ top:58%;left:76%; }
+
+.mali{top:48%;left:46%;}
+.nigeria{top:52%;left:48.5%; }
+.senegal{top:50%;left:43%;}
+.cameroun{top:54%;left:50%;}
+.coteivoire{top:53%;left:45%;}
+.ghana{top:52%;left:46%; }
+.kenya{top:55.5%;left:56.5%;}
+.angola{top:62%;left:51%;}
+.gabon{top:56.5%;left:50%; }
+.botswana{top:66%;left:53%;}
+.afsud{top:70%;left:53%;}
+.lesotho{top:69%;left:54%;}
+.eswatini{top: 68%;left:55%;}
+.madagascar{top:66%;  left:59%; }
+.mozambique{top:64%;left:56%;}
+.zambie{top:62.5%;left:54%;}
+.ouganda{top:55.5%;left:55%; }
+.ethiopie{top:52%;left:57%;}
+.somalie{top:52.5%;left:59%;}
+
+.france{top:33.5%;left:47.2%;}
+.allemagne{top:31%;left:49.3%;}
+.espagne{top:37%;left:45.5%;}
+.pologne{top:31%;left:52%;}
+.royaumeuni{top:29%;left:46%;}
+.paysbas{top:30%;left:48%;}
+.italie{top:35%;left:50%;}
+.grece{top:38%;left:53%;}
+.suede{top:25%;left:50.5%;}
+.norvege{top:25%;left:49%;}
+
+.maroc{top:40%;left:45%;}
+.algerie{top:43%; left:47%;}
+.tunisie{top:40%;left:49%;}
+.egypte{top:43%;left:54%;}
+.mauritanie{top:47%;left:43.5%;}
+.libye{top:43.5%;left:51%;}
+.soudan{top:49%;left:54.5%;}
+
+.australie{top:68%;left:83%;}
+.nouvellezelande{top:76%;left:92%;}
 
 
 /* footer */
@@ -132,9 +194,382 @@ footer {
     color: #fff;
     padding: 10px;
     margin-top: 40px;
-    font-size: 14px;
+    font-size: 14px; 
+    margin-top:200px;
 }
 
-footer p {
-    margin: 20px;
+footer p {margin: 20px;}
+
+#footer-logo-nav a{color:#ccc;justify-content:center;text-transform:none;font-size:16px;}
+#footer-logo-nav a:hover{background-color: #333;text-decoration:underline;}
+#footer-logo-nav{
+  display:flex;
+  padding-top:10px;
+  justify-content:center;
 }
+#footer-logo-nav a+a{border:none;}
+#footer-logo-nav img{padding-right:0;; width:55px;height:auto;}
+
+
+/* ---------------------------- */
+/* -----PAGE: FAIRE UN DON ------*/
+/* ---------------------------- */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    gap: 30px;
+    padding: 30px; 
+  }
+  .column {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid var(--gris-clair);
+    border-radius: 2px;
+  }
+  .column h2 {
+    color: rgb(72, 72, 72);
+    margin-bottom: 15px;
+    font-size: 23px;
+    border-bottom: 1px solid rgb(203, 200, 200);
+  }
+
+  .montant-btn {
+    flex: 1;
+    padding: 10px 0;
+    border: none;
+    background-color: rgb(248, 157, 53);
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    width :70px;}
+    
+    .montant-btn.selected{
+        background-color:rgb(184, 83, 5); 
+
+    }
+  .montant-perso {
+    margin-top:13px;
+    margin-bottom: 20px;
+  }
+  
+  .montant-perso input {
+    width: 100%;
+    padding: 8px;
+    background-color:rgb(231, 231, 231);
+
+  }
+  .deduction-fiscale p {margin-bottom: 10px;font-size: 15px;}
+  .deduction-fiscale em , #ma-deduc{
+    font-style: italic;
+    color: #666;
+  }
+  #ma-deduc1{color:black;font-style: bold;}
+  
+
+  /* COORDS */
+  .column-coordonnees{background-color: rgb(231, 231, 231);}
+  .column-coordonnees form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+ 
+  /* PAYER*/
+  .column-reglement .boutons-reglement {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  .column-reglement .boutons-reglement button,
+  .column-reglement .boutons-reglement a {
+    display: block;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  /* PARTENAIRES*/
+  #part{
+    padding-top:70px;
+    text-transform:uppercase;
+    color:#004d40;
+    padding-bottom:10px;
+    transition: transform 1.01s ease;
+  }
+
+  #partenaires{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+   
+  }
+  #part-logo{padding:10px 30px;}
+
+  #part-logo img{
+    width:200px;
+    border-radius:100%;
+    padding:30px;
+    transition: transform 1.01s ease;
+  }
+
+  #part-logo img:hover, #part:hover{
+    transform: translateY(-40px) scale(1.0);
+    
+  }
+
+
+/* ---------------------------- */
+/* -PAGE: Recette de la semaine-*/
+/* ---------------------------- */
+
+
+.recipe-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.recipe-card img {
+  width: 100%;
+  height: auto;
+}
+
+.recipe-content {
+  padding: 20px;
+}
+
+.recipe-content h2 {
+  margin-top: 0;
+}
+
+.recipe-details {
+  display: none;
+  margin-top: 10px;
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+}
+
+button {
+  background-color: #00796b;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #004d40;
+}
+
+
+
+/* ---------------------------- */
+/* -----PAGES: RECTTES/PAYS------*/
+/* ---------------------------- */
+
+.nompays{
+  color:rgb(196, 91, 25);
+}
+.histoire{
+    padding-left:270px;
+    padding-right:270px;
+}
+section .ligne{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+    text-align: left;
+    padding: 40px 0;
+    
+}
+.ligne:hover{
+    transform: scale(1.05);
+    transition: transform 0.7s ease;
+}
+  
+.ligne .vignette {flex: 0 0 300px;height: auto;max-width:300px;}
+
+  .pays1-container,.pays3-container{border-right: 2px solid #ddd;}
+  .pays2-container {flex-direction: row-reverse;border-left:2px solid #ddd;}
+  .pays2{text-align:right;}
+  
+  .plat{width:400px;border-radius: 5px;}
+  .description-plat{margin:20px 300px 20px 300px;}
+  
+  .ingredients-container {
+    justify-content: center;
+    display: flex;
+    gap: 30px;
+    text-align: left;   
+    padding:20px 200px 20px 200px;
+    
+  }
+  
+  
+  .ingredients li{border-bottom: 1px solid #ddd;}
+
+
+ 
+.instructions{
+    justify-content:center;
+    padding-bottom:50px;
+    text-align:left;
+    margin:0 300px 10px 300px;
+    font-weight: bold;
+    
+}
+.instruction li{margin-bottom:200px;}
+
+.tempsrecette-container{
+    display:flex;
+    justify-content: center;
+    padding-bottom:100px;
+}
+.tempsrecette{
+    background-color: rgb(196, 91, 25);
+    border-radius:30px;
+    color:white;
+    max-width:600px;
+    display:flex;
+}
+
+.tempsrecette p {padding: 2px 20px 2px;}
+.tempsrecette p+p{border-left: 1px solid white;}
+
+
+/* ----------------------------------- */
+/* -----PAGE: CAROUSEL CATEGORIES------*/
+/* ----------------------------------- */
+
+#carousel {
+  margin: 50px auto;
+  width: 700px;
+  height: 500px;
+  border: solid 1px #ddd;
+  box-shadow: 0 0 14px rgba(196, 92, 8, 0.1);
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 10px;
+  
+}
+
+#carousel-content {
+  display: flex;
+  transition: transform 0.5s ease;
+  height: 100%;
+  gap: 20px;
+  width: max-content; 
+  
+}
+
+.slide {
+  min-width: 700px; 
+  height: 100%;
+  padding: 40px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  background-image: url("../img/fond-orange.png");
+}
+.slide a{text-decoration: none;font-size:20px; color: #656565;}
+.slide a:hover{color:black;font-style:bold;}
+
+.bouton {
+  position: absolute;
+  width: 70px;
+  cursor: pointer;
+  top: 40%;
+  z-index: 10;
+}
+
+#g {
+  left: 0;
+  opacity: 0.7;
+}
+
+#d {
+  right: 0;
+  opacity: 0.7;
+  transform: rotate(180deg);
+}
+
+#g:hover {
+  transform: rotate(0deg) scale(1.1);
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+#d:hover {
+  transform: rotate(180deg) scale(1.1);
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+.in-cat {
+  text-align: center;
+  font-size:30px;
+  padding: 40px;
+  color:rgb(196, 91, 25)
+}
+
+
+/* ----------------------------------- */
+/* -----PAGE: EN SAV PLUS--------------*/
+/* ----------------------------------- */
+.profils{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 60px 200px;
+}
+.description{
+  font-style:italic;
+}
+.nous_photo{
+  width:200px;
+  border-radius: 100%;
+}
+.contact{display:flex;justify-content:center;}
+
+.icn-contact{width:50px;}
+#presentation{
+  padding-left:300px;
+  padding-right: 300px;
+  text-align:left; 
+  font-size:17px;
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+}
+#droite div+div{border-top: 2px solid #ddd; margin-top:50px;}
+
+.col{ 
+  margin-top:50px;
+  margin:20px;
+  
+}
+.col:hover{
+  transform: perspective(600px) rotateY(3deg);;
+  transition: ease 0.5s;}
+
+.qst{
+  color: rgb(152, 71, 0);
+  font-size:25px;
+  font-family:Arial bold;
+}
+.icones-txt{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  color: #333;
+}
+.icn{width:50px;}
