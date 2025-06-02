@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Don</title>
+    <link rel="stylesheet" href="../css/style.css">
+    
+  </head>
+
+  <body>
+    <header>
+      <a href="acceuil.html">
+          <img class="logo" src="../img/logo2.png" alt="Logo">
+      </a>
+      <form class="search-form" action="#" method="get" onsubmit="cherchePays(); return(false)">
+          <input type="text" id="barreRecherche" placeholder="Rechercher une place..." name="q">
+          <button id="boutonsearch" type="submit">Go</button>
+      </form>
+      <nav>
+          <a href="menusemaine.html">Menu de la semaine</a>
+          <a href="categories.html">Recettes par catégorie</a>
+          <a href="apropos.html">À propos</a>
+          <a href="don.html">Faire un don</a>
+      </nav>
+  </header>
+
+    <p id="intro">Chaque don a du sens !</p>
+    <p class="tt">Grâce à notre sélection rigoureuse et à nos partenariats de confiance, vous soutenez en toute 
+      sérénité des initiatives locales telles que la sauvegarde de variétés agricoles, les ateliers de cuisine 
+      traditionnelle ou encore la transmission de recettes ancestrales. En nous faisant un don, vous contribuez 
+      directement à ces actions concrètes, tout en appuyant une équipe engagée dans la préservation des cultures 
+      sous toutes leurs formes.</p><br>
+
+    <main class="container">
+      <!--DON-->
+      <section class="column column-don">
+        <h2> 1. Mon don</h2>
+        <div class="selection-montant">
+          <button type="button" class="montant-btn" data-montant="100">100 €</button>
+          <button type="button" class="montant-btn" data-montant="500">500 €</button>
+          <button type="button" class="montant-btn" data-montant="1000">1 000 €</button>
+        </div>
+
+        <div class="montant-perso">
+          <input id="montant-libre" type="number" placeholder="Montant libre €">
+        </div>
+
+        <div class="deduction-fiscale">
+          <p id="ma-deduc">Ma déduction fiscale</p>
+          <p id="ma-deduc1">Votre don de 1500 € est déductible de 75 % sur le montant de votre Impôt sur la Fortune Immobilière (I.F.I.), dans la limite de 50 000 €, et ne vous coûte à ce titre que 375 €.</p>
+          <p>Si vous n'êtes pas imposable à l'I.F.I., votre don est déductible à hauteur de 66 % de votre Impôt sur le Revenu, dans la limite de 20 % de votre revenu net imposable.</p>
+          <p><em>Articles 200, 238 bis et 978 du C.G.I</em></p>
+        </div>
+      </section>
+
+      <!-- COORD-->
+      <section class="column column-coordonnees">
+        <h2>2. Mes coordonnées</h2>
+        <form action="#" method="post">
+          <div class="form-group">
+            <label>
+              <input type="checkbox" name="organisation">
+              Je représente une organisation ou une société
+            </label>
+          </div>
+          <div class="form-group">
+            <label for="civilite">Civilité *</label>
+            <select id="civilite" name="civilite" required>
+              <option value="" disabled selected hidden>--- Choisir une civilité --</option>
+              <option>Monsieur</option>
+              <option>Madame</option>
+              <option>Monsieur et Madame</option>
+              <option>Autre</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nom">Nom *</label>
+              <input id="nom" name="nom" type="text" required>
+            </div>
+            <div class="form-group">
+              <label for="prenom">Prénom *</label>
+              <input id="prenom" name="prenom" type="text" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail *</label>
+            <input id="email" name="email" type="email" pattern=".+@.+\..+" required>
+          </div>
+          <div class="form-group">
+            <label for="adresse">Adresse *</label>
+            <input id="adresse" name="adresse" type="text" required>
+          </div>
+          <div class="form-group">
+            <label for="complement">Complément d'adresse</label>
+            <input id="complement" name="complement" type="text">
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="code-postal">Code postal *</label>
+              <input id="code-postal" name="code-postal" type="text" required>
+            </div>
+            <div class="form-group">
+              <label for="ville">Ville *</label>
+              <input id="ville" name="ville" type="text" required>
+            </div>
+          </div>
+        </form>
+      </section>
+
+      <!-- REGLEMENT -->
+      <form class="column column-reglement">
+        <h2>3. Mon règlement</h2>
+        <div class="boutons-reglement">
+          <button type="submit" id="virement">JE DONNE PAR VIREMENT BANCAIRE EN LIGNE</button>
+          <button type="submit" id="carte">DON SÉCURISÉ EN LIGNE PAR CARTE BANCAIRE</button>
+        </div><br>
+        <div class="info-action">
+          <h3>DONNER C'EST AGIR</h3>
+          <p><strong>Faites un don utile, traçable, et directement reversé à nos initiatives locales. Votre don soutiendra des projets concrets et des acteurs de terrain.</strong></p>
+        </div>
+      </form>
+    </main>
+
+    <h2 class="partenaires" id="part">Nos partenaires</h2>
+    <div class="partenaires" id="part-logo">
+      <a href="https://tournonslapage.org/fr"><img src="../img/tlp.png" alt="Tournons la page"></a>
+      <a href="https://www.unesco.org/fr"><img src="../img/unesco.png" alt="Unesco"></a>
+      <a href="https://www.greenpeace.org/france/"><img src="../img/GP.jpeg" alt="Greenpeace"></a>
+    </div>
+
+    <footer>
+      <div id="footer-logo-nav">
+        <a href="acceuil.html">
+          <img class="logo" src="../img/logo2.png" alt="Logo">
+        </a>
+        <nav>
+          <a href="menusemaine.html">Menu de la semaine</a>
+          <a href="categories.html">Recettes par catégorie</a>
+          <a href="apropos.html">À propos</a>
+          <a href="don.html">Faire un don</a>
+        </nav>
+      </div>
+      <p>© 2025 Plate&Place - Tous droits réservés</p>
+    </footer>
+    <script src="../scripts/script.js"></script>
+  </body>
+</html>
