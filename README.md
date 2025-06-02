@@ -23,4 +23,6 @@ Fonctionnalités:
 - Faire un don : formulaire avec champs obligatoires et actualisation de la page si don.
 
 
+PAYEMENT DON NON FONCTIONNEL
+
 PAGES DE PAYS/RECETTE RÉALISÉES (7) : Nigéria, Tunisie, Chine, Australie, Cameroun, Colombie, Argentine
