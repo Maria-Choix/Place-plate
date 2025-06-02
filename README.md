@@ -20,9 +20,9 @@ Fonctionnalités:
 - Barre de recherche : recherche un pays pour accéder à sa page (si réalisée, sinon fenêtre pop-up).
 - Menu de la semaine : plat de la semaine automatiquement mis à jour selon la semaine (javascript).
 - Recettes par catégories : carrousel
-- Faire un don : formulaire avec champs obligatoires et actualisation de la page si don.
+- Faire un don : formulaire avec champs obligatoires et actualisation de la page si don (PAIEMENT DON NON FONCTIONNEL).
 
 
-PAYEMENT DON NON FONCTIONNEL
+
 
 PAGES DE PAYS/RECETTE RÉALISÉES (7) : Nigéria, Tunisie, Chine, Australie, Cameroun, Colombie, Argentine
