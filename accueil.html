@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,114 +10,125 @@
 <body>
     <header>
         <a href="acceuil.html">
-            <img id="logo" src="../img/logo2.png" alt="Logo" ></a>
-        <form class="search-form" action="#" method="get">
-            <input type="text" placeholder="Rechercher un plate ou une place..." name="q" >
+            <img class="logo" src="../img/logo2.png" alt="Logo">
+        </a>
+        <form class="search-form" action="#" method="get" onsubmit="cherchePays(); return(false)">
+            <input type="text" id="barreRecherche" placeholder="Rechercher une place..." name="q">
+            <button id="boutonsearch" type="submit">Go</button>
         </form>
-          <br>
-
-          <nav>
+        <nav>
             <a href="menusemaine.html">Menu de la semaine</a>
             <a href="categories.html">Recettes par catégorie</a>
-            <a href="cree.html">What's in my fridge?</a>
+            <a href="apropos.html">À propos</a>
             <a href="don.html">Faire un don</a>
         </nav>
     </header>
+    
+    
 
-<section> 
-        <p id="intro" class="tt">Pourquoi Place&Plate ?</p>
-        <p class="tt">Chez Place&Plate, nous croyons que chaque culture mérite d’être célébrée, pas seulement celles mises en avant par les grandes tendances culinaires.
-            Traditions ignorées, oubliées, ou réduites à des clichés, regorgent de savoir-faire, de goûts uniques et d’histoires profondément humaines.
-            Notre nom incarne cette conviction : derrière chaque place (lieu), il y a une plate (assiette) qui raconte un récit.
-            Nous voulons offrir à toutes les cuisines, des plus connues aux plus méconnues, la place qu’elles méritent, en révélant leur richesse, leur diversité, et leur beauté.
-            C’est une invitation au voyage, au respect des identités, et à la redécouverte du monde… par la cuisine.</p>
-            <br>
-    <p id="citation"> « La cuisine, c’est le plus court chemin pour voyager. » — Olivier Roellinger</p>
-</section>
- 
-    <p id="question">Alors, on se cuisine quoi aujourd'hui ?</p> <br>
+    <main>
+        <section id="acceuil-container">
+            <p class="intro1 tt">Pourquoi Place&Plate ?</p>
+            <p class="tt">
+                Chez Place&Plate, nous croyons que chaque culture mérite d’être célébrée, pas seulement celles mises en avant par les grandes tendances culinaires.
+                Traditions ignorées, oubliées, ou réduites à des clichés, regorgent de savoir-faire, de goûts uniques et d’histoires profondément humaines.
+                Notre nom incarne cette conviction : derrière chaque place (lieu), il y a une plate (assiette) qui raconte un récit.
+                Nous voulons offrir à toutes les cuisines, des plus connues aux plus méconnues, la place qu’elles méritent, en révélant leur richesse, leur diversité, et leur beauté.
+                C’est une invitation au voyage, au respect des identités, et à la redécouverte du monde… par la cuisine.
+            </p>
+            <p class="citation">« La cuisine, c’est le plus court chemin pour voyager. » — Olivier Roellinger</p>
+        </section>
 
-    <div class="map-container">
-        <img src="../img/carte2.png" id="map" usemap="#worldmap" alt="Carte du monde">
-      </div>
+        <p id="question">Alors, on se cuisine quoi aujourd'hui ?</p>
+        <p class="citation">
+            Cliquez sur une <strong>Place</strong> de la carte afin de découvrir sa richesse et un <strong>Plate</strong> associé !
+        </p>
 
-    <map name="worldmap">
-    <!-- 🌴 Afrique saharienne (Nord) -->
-    <area shape="rect" coords="660,300,690,330" href="recettes/maroc.html" alt="Maroc">
-    <area shape="rect" coords="690,300,720,330" href="recettes/algerie.html" alt="Algérie">
-    <area shape="rect" coords="720,300,750,330" href="recettes/tunisie.html" alt="Tunisie">
-    <area shape="rect" coords="750,330,780,360" href="recettes/egypte.html" alt="Égypte">
-    <area shape="rect" coords="690,345,720,375" href="recettes/mauritanie.html" alt="Mauritanie">
-    <area shape="rect" coords="660,360,690,390" href="recettes/maroc_sud.html" alt="Sahara Occidental">
-    <area shape="rect" coords="720,360,750,390" href="recettes/libye.html" alt="Libye">
-    <area shape="rect" coords="750,360,780,390" href="recettes/soudan.html" alt="Soudan">
+        <div class="map-container">
+            <img src="../img/carte2.png" id="map" alt="Carte du monde">
 
-    <!-- 🌍 Afrique subsaharienne (exemples répartis) -->
-    <area shape="rect" coords="660,420,690,450" href="recettes/mali.html" alt="Mali">
-    <area shape="rect" coords="630,405,660,435" href="recettes/senegal.html" alt="Sénégal">
-    <area shape="rect" coords="660,450,690,480" href="recettes/cote_ivoire.html" alt="Côte d'Ivoire">
-    <area shape="rect" coords="690,465,720,495" href="recettes/ghana.html" alt="Ghana">
-    <area shape="rect" coords="780,480,810,510" href="recettes/nigeria.html" alt="Nigéria">
-    <area shape="rect" coords="810,570,840,600" href="recettes/kenya.html" alt="Kenya">
-    <area shape="rect" coords="870,570,900,600" href="recettes/rdc.html" alt="RDC">
-    <area shape="rect" coords="840,600,870,630" href="recettes/angola.html" alt="Angola">
-    <area shape="rect" coords="810,750,840,780" href="recettes/botswana.html" alt="Botswana">
-    <area shape="rect" coords="840,780,870,810" href="recettes/afrique_du_sud.html" alt="Afrique du Sud">
-    <area shape="rect" coords="870,750,900,780" href="recettes/lesotho.html" alt="Lesotho">
-    <area shape="rect" coords="960,750,990,780" href="recettes/madagascar.html" alt="Madagascar">
-    <area shape="rect" coords="900,660,930,690" href="recettes/malawi.html" alt="Malawi">
-    <area shape="rect" coords="930,690,960,720" href="recettes/mozambique.html" alt="Mozambique">
-    <area shape="rect" coords="840,540,870,570" href="recettes/ouganda.html" alt="Ouganda">
-    <area shape="rect" coords="900,540,930,570" href="recettes/somalie.html" alt="Somalie">
-    <area shape="rect" coords="870,510,900,540" href="recettes/ethiopie.html" alt="Éthiopie">
-    <area shape="rect" coords="840,810,870,840" href="recettes/eswatini.html" alt="Eswatini">
-    <area shape="rect" coords="810,630,840,660" href="recettes/zambie.html" alt="Zambie">
-    <area shape="rect" coords="810,540,840,570" href="recettes/gabon.html" alt="Gabon">
+            <!-- Afrique du Nord -->
+            <a href="avenir.html" class="point maroc" title="Maroc"></a>
+            <a href="avenir.html" class="point algerie" title="Algérie"></a>
+            <a href="tunisie.html" class="point tunisie" title="Tunisie"></a>
+            <a href="avenir.html" class="point egypte" title="Égypte"></a>
+            <a href="avenir.html" class="point mauritanie" title="Mauritanie"></a>
+            <a href="avenir.html" class="point libye" title="Libye"></a>
+            <a href="avenir.html" class="point soudan" title="Soudan"></a>
 
-    <!-- 🌎 Amérique -->
-    <area shape="rect" coords="180,240,210,270" href="recettes/canada.html" alt="Canada">
-    <area shape="rect" coords="180,300,210,330" href="recettes/usa.html" alt="États-Unis">
-    <area shape="rect" coords="180,360,210,390" href="recettes/mexique.html" alt="Mexique">
-    <area shape="rect" coords="210,420,240,450" href="recettes/cuba.html" alt="Cuba">
-    <area shape="rect" coords="240,510,270,540" href="recettes/bresil.html" alt="Brésil">
-    <area shape="rect" coords="210,480,240,510" href="recettes/colombie.html" alt="Colombie">
-    <area shape="rect" coords="210,540,240,570" href="recettes/perou.html" alt="Pérou">
-    <area shape="rect" coords="240,570,270,600" href="recettes/argentine.html" alt="Argentine">
-    <area shape="rect" coords="210,570,240,600" href="recettes/chili.html" alt="Chili">
+            <!-- Afrique subsaharienne -->
+            <a href="avenir.html" class="point mali" title="Mali"></a>
+            <a href="nigeria.html" class="point nigeria" title="Nigéria"></a>
+            <a href="avenir.html" class="point senegal" title="Sénégal"></a>
+            <a href="cameroun.html" class="point cameroun" title="Cameroun"></a>
+            <a href="avenir.html" class="point coteivoire" title="Côte d'Ivoire"></a>
+            <a href="avenir.html" class="point ghana" title="Ghana"></a>
+            <a href="avenir.html" class="point kenya" title="Kenya"></a>
+            <a href="avenir.html" class="point angola" title="Angola"></a>
+            <a href="avenir.html" class="point gabon" title="Gabon"></a>
+            <a href="avenir.html" class="point botswana" title="Botswana"></a>
+            <a href="avenir.html" class="point afsud" title="Afrique du Sud"></a>
+            <a href="avenir.html" class="point lesotho" title="Lesotho"></a>
+            <a href="avenir.html" class="point madagascar" title="Madagascar"></a>
+            <a href="avenir.html" class="point mozambique" title="Mozambique"></a>
+            <a href="avenir.html" class="point ouganda" title="Ouganda"></a>
+            <a href="avenir.html" class="point somalie" title="Somalie"></a>
+            <a href="avenir.html" class="point ethiopie" title="Éthiopie"></a>
+            <a href="avenir.html" class="point eswatini" title="Eswatini"></a>
+            <a href="avenir.html" class="point zambie" title="Zambie"></a>
 
-    <!-- 🌏 Asie -->
-    <area shape="rect" coords="1020,330,1050,360" href="recettes/chine.html" alt="Chine">
-    <area shape="rect" coords="1080,330,1110,360" href="recettes/coree.html" alt="Corée du Sud">
-    <area shape="rect" coords="1110,330,1140,360" href="recettes/japon.html" alt="Japon">
-    <area shape="rect" coords="960,360,990,390" href="recettes/inde.html" alt="Inde">
-    <area shape="rect" coords="1020,390,1050,420" href="recettes/thailande.html" alt="Thaïlande">
-    <area shape="rect" coords="1050,420,1080,450" href="recettes/vietnam.html" alt="Vietnam">
-    <area shape="rect" coords="1110,450,1140,480" href="recettes/indonesie.html" alt="Indonésie">
+            <!-- Amérique -->
+            <a href="avenir.html" class="point canada" title="Canada"></a>
+            <a href="avenir.html" class="point etatsunis" title="États-Unis"></a>
+            <a href="avenir.html" class="point mexique" title="Mexique"></a>
+            <a href="avenir.html" class="point cuba" title="Cuba"></a>
+            <a href="avenir.html" class="point bresil" title="Brésil"></a>
+            <a href="colombie.html" class="point colombie" title="Colombie"></a>
+            <a href="avenir.html" class="point perou" title="Pérou"></a>
+            <a href="argentine.html" class="point argentine" title="Argentine"></a>
+            <a href="avenir.html" class="point chili" title="Chili"></a>
 
-    <!-- 🌍 Europe -->
-    <area shape="rect" coords="810,240,840,270" href="recettes/france.html" alt="France">
-    <area shape="rect" coords="840,210,870,240" href="recettes/allemagne.html" alt="Allemagne">
-    <area shape="rect" coords="780,210,810,240" href="recettes/espagne.html" alt="Espagne">
-    <area shape="rect" coords="870,210,900,240" href="recettes/pologne.html" alt="Pologne">
-    <area shape="rect" coords="810,180,840,210" href="recettes/royaume_uni.html" alt="Royaume-Uni">
-    <area shape="rect" coords="870,180,900,210" href="recettes/pays_bas.html" alt="Pays-Bas">
-    <area shape="rect" coords="900,210,930,240" href="recettes/italie.html" alt="Italie">
-    <area shape="rect" coords="930,180,960,210" href="recettes/grece.html" alt="Grèce">
-    <area shape="rect" coords="960,150,990,180" href="recettes/suede.html" alt="Suède">
-    <area shape="rect" coords="990,150,1020,180" href="recettes/norvege.html" alt="Norvège">
+            <!-- Asie -->
+            <a href="chine.html" class="point chine" title="Chine"></a>
+            <a href="avenir.html" class="point coresud" title="Corée du Sud"></a>
+            <a href="avenir.html" class="point japon" title="Japon"></a>
+            <a href="avenir.html" class="point inde" title="Inde"></a>
+            <a href="avenir.html" class="point thailande" title="Thaïlande"></a>
+            <a href="avenir.html" class="point vietnam" title="Vietnam"></a>
+            <a href="avenir.html" class="point indonesie" title="Indonésie"></a>
 
-    <!-- 🐧 Océanie -->
-    <area shape="rect" coords="1170,570,1200,600" href="recettes/australie.html" alt="Australie">
-    <area shape="rect" coords="1200,600,1230,630" href="recettes/nouvelle_zelande.html" alt="Nouvelle-Zélande">
-    </map>
+            <!-- Europe -->
+            <a href="avenir.html" class="point france" title="France"></a>
+            <a href="avenir.html" class="point allemagne" title="Allemagne"></a>
+            <a href="avenir.html" class="point espagne" title="Espagne"></a>
+            <a href="avenir.html" class="point pologne" title="Pologne"></a>
+            <a href="avenir.html" class="point royaumeuni" title="Royaume-Uni"></a>
+            <a href="avenir.html" class="point paysbas" title="Pays-Bas"></a>
+            <a href="avenir.html" class="point italie" title="Italie"></a>
+            <a href="avenir.html" class="point grece" title="Grèce"></a>
+            <a href="avenir.html" class="point suede" title="Suède"></a>
+            <a href="avenir.html" class="point norvege" title="Norvège"></a>
 
+            <!-- Océanie -->
+            <a href="australie.html" class="point australie" title="Australie"></a>
+            <a href="avenir.html" class="point nouvellezelande" title="Nouvelle-Zélande"></a>
+        </div>
+    </main>
 
     <footer>
-        <p>© 2025 Choix & Ndjibou - Tous droits réservés</p>
+        <div id="footer-logo-nav">
+            <a href="acceuil.html">
+                <img class="logo" src="../img/logo2.png" alt="Logo">
+            </a>
+            <nav>
+                <a href="menusemaine.html">Menu de la semaine</a>
+                <a href="categories.html">Recettes par catégorie</a>
+                <a href="apropos.html">À propos</a>
+                <a href="don.html">Faire un don</a>
+            </nav>
+        </div>
+        <p>© 2025 Plate&Place - Tous droits réservés</p>
     </footer>
-
+    <script src="../scripts/script.js"></script>
 </body>
-
-
 </html>
-
