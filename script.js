@@ -96,7 +96,7 @@ document.addEventListener("DOMContentLoaded", () => {
       week: 22,
       event: "Semaine de l'Afrique",
       title: "Yassa au poulet (Sénégal)",
-      image: "../img/yassa.heic,
+      image: "../img/yassa.heic",
       history: "Plat traditionnel sénégalais...",
       reason: "Choisi pour célébrer la richesse culinaire de l’Afrique...",
       recipe: `
