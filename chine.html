@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chine</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <a href="acceuil.html">
+            <img class="logo" src="../img/logo2.png" alt="Logo">
+        </a>
+        <form class="search-form" action="#" method="get" onsubmit="cherchePays(); return(false)">
+            <input type="text" id="barreRecherche" placeholder="Rechercher une place..." name="q">
+            <button id="boutonsearch" type="submit">Go</button>
+        </form>
+        <nav>
+            <a href="menusemaine.html">Menu de la semaine</a>
+            <a href="categories.html">Recettes par catégorie</a>
+            <a href="apropos.html">À propos</a>
+            <a href="don.html">Faire un don</a>
+        </nav>
+    </header>
+
+    <section class="histoire">
+        <h1>La <a class="nompays">Chine</a>, du fleuve jaune aux métropoles futuristes</h1>
+        <p class="citation">(Psst..Cliquez sur les images pour en savoir plus !)</p><br>
+
+        <div class="ligne pays1-container">
+            <a href="https://www.initiativesfleuves.org/publications/fleuves/fleuve-jaune/">
+                <img src="../img/img1chine.jpeg" alt="Visuel 1" class="vignette">
+            </a>
+            <p class="pays1">
+                La Chine, berceau d’une civilisation de plus de 4 000 ans, prend racine dans les rives du Fleuve Jaune où se sont développées les premières dynasties légendaires (Xia, Shang, Zhou). L’unification sous Qin Shi Huang en 221 av. J.-C. posa les fondations d’un État centralisé, suivi par l’âge d’or des Han, la splendeur des Tang et l’apogée technologique des Song. Successivement dirigée par les empereurs Ming et Qing, la Chine millénaire a forgé un riche patrimoine philosophique (confucianisme, taoïsme, bouddhisme) et artistique (porcelaine, calligraphie, peinture sur soie).
+            </p>
+        </div>
+
+        <div class="ligne pays2-container">
+            <a href="https://www.petitfute.com/v43997-pekin/actualite/m4-idees-week-end-et-vacances/a16586-pekin-capitale-de-tous-les-possibles.html">
+                <img src="../img/img2chine.webp" alt="Visuel 2" class="vignette">
+            </a>
+            <p class="pays2">
+                Aujourd’hui, la République populaire de Chine (RPC), instaurée en 1949, s’affirme comme la seconde puissance économique mondiale. Ses mégapoles ultramodernes — Pékin, Shanghai, Shenzhen — symbolisent un développement spectaculaire, porté par l’industrie, le numérique et les « nouvelles routes de la soie ». Face à un ralentissement de la croissance, la RPC cherche à rééquilibrer son modèle : montée en gamme technologique, transition énergétique et réduction des inégalités régionales. Sur la scène internationale, elle multiplie les investissements étrangers et joue un rôle de plus en plus influent dans les instances multilatérales, tout en naviguant entre coopération et rivalités géopolitiques.
+            </p>
+        </div>
+
+        <div class="ligne pays3-container">
+            <a href="https://fr.wikipedia.org/wiki/Production_de_porcelaine_à_Jingdezhen">
+                <img src="../img/img3chine.jpeg" alt="Visuel 3" class="vignette">
+            </a>
+            <p class="pays3">
+                Riche de 56 groupes ethniques et d’une diversité géographique extrême — des steppes mongoles aux déserts du Xinjiang en passant par les jungles du Yunnan — la Chine offre un patrimoine culturel foisonnant. L’opéra de Pékin, la calligraphie, les arts martiaux et la porcelaine de Jingdezhen illustrent cet héritage. Côté gastronomie, la cuisine chinoise se décline en huit traditions régionales ; le canard laqué de Pékin, emblème de la gastronomie impériale, se distingue par sa peau croustillante, sa découpe cérémonielle et son service avec crêpes fines, sauce hoisin, concombres et ciboule.
+            </p>
+        </div>
+    </section>
+
+    <h2>Le Peking Duck</h2>
+    <section class="ingredients-container">
+        <div class="recette">
+            <img src="../img/pekingduck.jpeg" alt="Peking Duck" class="plat">
+        </div>
+        <div class="recette">
+            <h3>Ingrédients</h3>
+            <ul class="ingredients">
+                <li><strong>1</strong> canard fermier d’environ 2 kg</li>
+                <li><strong>4 L</strong> d'eau bouillante</li>
+                <li><strong>2 c. à soupe</strong> de miel</li>
+                <li><strong>2 c. à soupe</strong> de vinaigre de riz</li>
+                <li><strong>2 c. à soupe</strong> de sauce soja claire</li>
+                <li><strong>1 c. à café</strong> de cinq-épices</li>
+                <li><strong>1 c. à café</strong> de sel</li>
+                <li><strong>1 c. à soupe</strong> de fécule de maïs</li>
+                <li><strong>4 c. à soupe</strong> de sauce hoisin</li>
+                <li><strong>1 c. à soupe</strong> de sauce soja</li>
+                <li><strong>1 c. à café</strong> de sucre</li>
+                <li><strong>24</strong> crêpes chinoises (pancakes)</li>
+                <li>Concombres en bâtonnets</li>
+                <li>Ciboule (oignon nouveau) émincée</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="tempsrecette-container">
+        <div class="tempsrecette">
+            <p>Temps de préparation : 5h30</p>
+            <p>Nombre de portions : 4 personnes</p>
+        </div>
+    </section>
+
+    <h2>Recette</h2>
+    <section class="instructions">
+        <ol>
+            <li>Rincez soigneusement le canard à l’eau claire, puis séchez-le à l’intérieur et à l’extérieur avec du papier absorbant.</li>
+            <li>Portez 4 L d’eau à ébullition, plongez le canard 2 minutes, retirez-le, égouttez-le et séchez-le à nouveau.</li>
+            <li>Dans une petite casserole, chauffez 2 c. à s. de miel avec 2 c. à s. de vinaigre de riz. Badigeonnez le canard et suspendez-le 4 h au frais pour faire sécher la peau.</li>
+            <li>Mélangez 2 c. à s. de sauce soja, 1 c. à s. de fécule, 1 c. à c. de sel et 1 c. à c. de cinq-épices, puis frottez l’intérieur du canard.</li>
+            <li>Enfournez 15 min à 220 °C, puis baissez à 180 °C et cuisez 45 min en arrosant toutes les 15 min.</li>
+            <li>Laissez reposer le canard 10 min, découpez la peau croustillante et la chair.</li>
+            <li>Mélangez hoisin, sauce soja et sucre pour obtenir la sauce.</li>
+            <li>Réchauffez les crêpes chinoises à la vapeur ou au micro-ondes.</li>
+            <li>Servez dans les crêpes avec sauce, concombre et ciboule, puis roulez et dégustez.</li>
+        </ol>
+    </section>
+
+    <h3>Servez immédiatement et...</h3>
+    <h2>Bon appétit !</h2>
+
+    <footer>
+        <div id="footer-logo-nav">
+            <a href="acceuil.html">
+                <img class="logo" src="../img/logo2.png" alt="Logo">
+            </a>
+            <nav>
+                <a href="menusemaine.html">Menu de la semaine</a>
+                <a href="categories.html">Recettes par catégorie</a>
+                <a href="apropos.html">À propos</a>
+                <a href="don.html">Faire un don</a>
+            </nav>
+        </div>
+        <p>© 2025 Plate&Place - Tous droits réservés</p>
+    </footer>
+</body>
+</html>

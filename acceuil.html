@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <a href="acceuil.html">
+            <img class="logo" src="../img/logo2.png" alt="Logo">
+        </a>
+        <form class="search-form" action="#" method="get" onsubmit="cherchePays(); return(false)">
+            <input type="text" id="barreRecherche" placeholder="Rechercher une place..." name="q">
+            <button id="boutonsearch" type="submit">Go</button>
+        </form>
+        <nav>
+            <a href="menusemaine.html">Menu de la semaine</a>
+            <a href="categories.html">Recettes par catégorie</a>
+            <a href="apropos.html">À propos</a>
+            <a href="don.html">Faire un don</a>
+        </nav>
+    </header>
+    
+    
+
+    <main>
+        <section id="acceuil-container">
+            <p class="intro1 tt">Pourquoi Place&Plate ?</p>
+            <p class="tt">
+                Chez Place&Plate, nous croyons que chaque culture mérite d’être célébrée, pas seulement celles mises en avant par les grandes tendances culinaires.
+                Traditions ignorées, oubliées, ou réduites à des clichés, regorgent de savoir-faire, de goûts uniques et d’histoires profondément humaines.
+                Notre nom incarne cette conviction : derrière chaque place (lieu), il y a une plate (assiette) qui raconte un récit.
+                Nous voulons offrir à toutes les cuisines, des plus connues aux plus méconnues, la place qu’elles méritent, en révélant leur richesse, leur diversité, et leur beauté.
+                C’est une invitation au voyage, au respect des identités, et à la redécouverte du monde… par la cuisine.
+            </p>
+            <p class="citation">« La cuisine, c’est le plus court chemin pour voyager. » — Olivier Roellinger</p>
+        </section>
+
+        <p id="question">Alors, on se cuisine quoi aujourd'hui ?</p>
+        <p class="citation">
+            Cliquez sur une <strong>Place</strong> de la carte afin de découvrir sa richesse et un <strong>Plate</strong> associé !
+        </p>
+
+        <div class="map-container">
+            <img src="../img/carte2.png" id="map" alt="Carte du monde">
+
+            <!-- Afrique du Nord -->
+            <a href="avenir.html" class="point maroc" title="Maroc"></a>
+            <a href="avenir.html" class="point algerie" title="Algérie"></a>
+            <a href="tunisie.html" class="point tunisie" title="Tunisie"></a>
+            <a href="avenir.html" class="point egypte" title="Égypte"></a>
+            <a href="avenir.html" class="point mauritanie" title="Mauritanie"></a>
+            <a href="avenir.html" class="point libye" title="Libye"></a>
+            <a href="avenir.html" class="point soudan" title="Soudan"></a>
+
+            <!-- Afrique subsaharienne -->
+            <a href="avenir.html" class="point mali" title="Mali"></a>
+            <a href="nigeria.html" class="point nigeria" title="Nigéria"></a>
+            <a href="avenir.html" class="point senegal" title="Sénégal"></a>
+            <a href="cameroun.html" class="point cameroun" title="Cameroun"></a>
+            <a href="avenir.html" class="point coteivoire" title="Côte d'Ivoire"></a>
+            <a href="avenir.html" class="point ghana" title="Ghana"></a>
+            <a href="avenir.html" class="point kenya" title="Kenya"></a>
+            <a href="avenir.html" class="point angola" title="Angola"></a>
+            <a href="avenir.html" class="point gabon" title="Gabon"></a>
+            <a href="avenir.html" class="point botswana" title="Botswana"></a>
+            <a href="avenir.html" class="point afsud" title="Afrique du Sud"></a>
+            <a href="avenir.html" class="point lesotho" title="Lesotho"></a>
+            <a href="avenir.html" class="point madagascar" title="Madagascar"></a>
+            <a href="avenir.html" class="point mozambique" title="Mozambique"></a>
+            <a href="avenir.html" class="point ouganda" title="Ouganda"></a>
+            <a href="avenir.html" class="point somalie" title="Somalie"></a>
+            <a href="avenir.html" class="point ethiopie" title="Éthiopie"></a>
+            <a href="avenir.html" class="point eswatini" title="Eswatini"></a>
+            <a href="avenir.html" class="point zambie" title="Zambie"></a>
+
+            <!-- Amérique -->
+            <a href="avenir.html" class="point canada" title="Canada"></a>
+            <a href="avenir.html" class="point etatsunis" title="États-Unis"></a>
+            <a href="avenir.html" class="point mexique" title="Mexique"></a>
+            <a href="avenir.html" class="point cuba" title="Cuba"></a>
+            <a href="avenir.html" class="point bresil" title="Brésil"></a>
+            <a href="colombie.html" class="point colombie" title="Colombie"></a>
+            <a href="avenir.html" class="point perou" title="Pérou"></a>
+            <a href="argentine.html" class="point argentine" title="Argentine"></a>
+            <a href="avenir.html" class="point chili" title="Chili"></a>
+
+            <!-- Asie -->
+            <a href="chine.html" class="point chine" title="Chine"></a>
+            <a href="avenir.html" class="point coresud" title="Corée du Sud"></a>
+            <a href="avenir.html" class="point japon" title="Japon"></a>
+            <a href="avenir.html" class="point inde" title="Inde"></a>
+            <a href="avenir.html" class="point thailande" title="Thaïlande"></a>
+            <a href="avenir.html" class="point vietnam" title="Vietnam"></a>
+            <a href="avenir.html" class="point indonesie" title="Indonésie"></a>
+
+            <!-- Europe -->
+            <a href="avenir.html" class="point france" title="France"></a>
+            <a href="avenir.html" class="point allemagne" title="Allemagne"></a>
+            <a href="avenir.html" class="point espagne" title="Espagne"></a>
+            <a href="avenir.html" class="point pologne" title="Pologne"></a>
+            <a href="avenir.html" class="point royaumeuni" title="Royaume-Uni"></a>
+            <a href="avenir.html" class="point paysbas" title="Pays-Bas"></a>
+            <a href="avenir.html" class="point italie" title="Italie"></a>
+            <a href="avenir.html" class="point grece" title="Grèce"></a>
+            <a href="avenir.html" class="point suede" title="Suède"></a>
+            <a href="avenir.html" class="point norvege" title="Norvège"></a>
+
+            <!-- Océanie -->
+            <a href="australie.html" class="point australie" title="Australie"></a>
+            <a href="avenir.html" class="point nouvellezelande" title="Nouvelle-Zélande"></a>
+        </div>
+    </main>
+
+    <footer>
+        <div id="footer-logo-nav">
+            <a href="acceuil.html">
+                <img class="logo" src="../img/logo2.png" alt="Logo">
+            </a>
+            <nav>
+                <a href="menusemaine.html">Menu de la semaine</a>
+                <a href="categories.html">Recettes par catégorie</a>
+                <a href="apropos.html">À propos</a>
+                <a href="don.html">Faire un don</a>
+            </nav>
+        </div>
+        <p>© 2025 Plate&Place - Tous droits réservés</p>
+    </footer>
+    <script src="../scripts/script.js"></script>
+</body>
+</html>

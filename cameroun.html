@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cameroun</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <a href="acceuil.html">
+            <img class="logo" src="../img/logo2.png" alt="Logo">
+        </a>
+        <form class="search-form" action="#" method="get" onsubmit="cherchePays(); return false;">
+            <input type="text" id="barreRecherche" placeholder="Rechercher une place..." name="q">
+            <button id="boutonsearch" type="submit">Go</button>
+        </form>
+        <nav>
+            <a href="menusemaine.html">Menu de la semaine</a>
+            <a href="categories.html">Recettes par catégorie</a>
+            <a href="apropos.html">À propos</a>
+            <a href="don.html">Faire un don</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="histoire">
+            <h1>
+                Le <a class="nompays">Cameroun</a>, des forêts équatoriales aux plaines anglophones
+            </h1>
+            <p class="citation">(Psst..Cliquez sur les images pour en savoir plus !)</p>
+
+            <div class="ligne pays1-container">
+                <a href="https://fr.wikipedia.org/wiki/Portail:Cameroun#/media/Fichier:Carte_cameroun_francais.gif">
+                    <img src="../img/img1cameroun.gif" alt="Visuel 1" class="vignette">
+                </a>
+                <p class="pays1">
+                    Le territoire du Cameroun fut marqué dès le Ier millénaire av. J.-C. par l’arrivée des populations bantoues, qui y implantèrent agriculture sur brûlis, élevage et forges de fer.
+                    Aux XVIe–XVIIe siècles, les côtes virent s’installer des comptoirs portugais puis allemands, attirés par l’ivoire, l’or et la noix de kola.
+                    En 1884, le Traité de Protection plaça le Kamerun sous administration allemande, jusqu’à la Première Guerre mondiale, où il fut partagé entre la France et le Royaume-Uni par la Société des Nations.
+                </p>
+            </div>
+
+            <div class="ligne pays2-container">
+                <a href="https://fr.wikipedia.org/wiki/Cameroun#/media/Fichier:Paul_biya_and_colin_powell.jpg">
+                    <img src="../img/img2cameroun.jpeg" alt="Visuel 2" class="vignette">
+                </a>
+                <p class="pays2">
+                    Indépendant depuis 1960–1961, le Cameroun est aujourd’hui une république semi-présidentielle dirigée par Paul Biya depuis 1982.
+                    Avec près de 28 millions d’habitants, l’économie repose sur le pétrole, le bois, l’agriculture (cacao, café, banane) et un secteur des services en expansion.
+                    Le pays fait face à des défis majeurs : régionalisme et crise anglophone dans l’Ouest, inégalités rurales-urbaines, instabilité sécuritaire à la frontière nord (contre Boko Haram) et nécessité de diversification économique.
+                </p>
+            </div>
+
+            <div class="ligne pays3-container">
+                <a href="https://fr.wikipedia.org/wiki/Ngondo_%28fête%29">
+                    <img src="../img/img3cameroun.jpeg" alt="Visuel 3" class="vignette">
+                </a>
+                <p class="pays3">
+                    Le Cameroun se distingue par sa mosaïque de plus d’une centaine d’ethnies, dont les Bamiléké, les Béti, les Douala ou les Fang.
+                    La musique (makossa, bikutsi), la danse et l’artisanat (poterie, tissage) accompagnent les rites de passage et les cérémonies communautaires.
+                    La cuisine traditionnelle met à l’honneur le manioc (foufou), les ignames, le ndolé et le poisson fumé.
+                    Chaque année, des festivals tels que le Ngondo à Douala ou le Ngouon à Garoua célèbrent cette richesse culturelle en rassemblant musiciens, danseurs et chefs de villages.
+                </p>
+            </div>
+        </section>
+
+        <h2>Le Ndolé</h2>
+
+        <section class="ingredients-container">
+            <div class="recette">
+                <img src="../img/ndole.png" alt="Ndolé" class="plat">
+            </div>
+            <div class="recette">
+                <h3>Ingrédients</h3>
+                <ul class="ingredients">
+                    <li><strong>500 g</strong> de feuilles de ndolé fraîches ou surgelées</li>
+                    <li><strong>300 g</strong> de bœuf (coupé en dés)</li>
+                    <li><strong>200 g</strong> de crevettes séchées</li>
+                    <li><strong>2 c. à s.</strong> de crevettes moulues</li>
+                    <li><strong>200 g</strong> de pâte d'arachide</li>
+                    <li><strong>2</strong> oignons (émincés)</li>
+                    <li><strong>2</strong> gousses d'ail (hachées)</li>
+                    <li><strong>2 c. à s.</strong> d'huile de palme</li>
+                    <li><strong>2 c. à s.</strong> de crevettes séchées moulues (kamoungué ou crayfish)</li>
+                    <li><strong>1</strong> cube de bouillon Maggi</li>
+                    <li><strong>1 c. à c.</strong> de piment en poudre (facultatif)</li>
+                    <li>Sel et poivre selon votre goût</li>
+                    <li><strong>Environ 400 ml</strong> d'eau</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="tempsrecette-container">
+            <div class="tempsrecette">
+                <p>Temps de préparation : 1h10</p>
+                <p>Nombre de portions : 4</p>
+            </div>
+        </section>
+
+        <h2>Recette</h2>
+        <section class="instructions">
+            <ol>
+                <li>Égouttez et hachez finement les feuilles de ndolé.</li>
+                <li>Faites revenir le bœuf dans 1 c. à s. d’huile de palme, ajoutez un peu d’eau, couvrez et laissez mijoter 20 min à feu doux.</li>
+                <li>Ajoutez les oignons émincés et les gousses d’ail hachées, laissez fondre 5 min, puis incorporez les crevettes séchées et 2 c. à s. de crevettes moulues et remuez 2 min.</li>
+                <li>Ajoutez les feuilles de ndolé et 200 ml d’eau, mélangez et laissez cuire 10 min.</li>
+                <li>Délayez la pâte d’arachide dans 200 ml d’eau chaude, versez dans la casserole, ajoutez 1 cube de bouillon et, si désiré, 1 c. à c. de piment.</li>
+                <li>Laissez mijoter 10–15 min à feu doux en remuant, puis ajustez sel et consistance si nécessaire.</li>
+            </ol>
+        </section>
+
+        <h3>Servez votre Ndolé bien chaud ! Accompagné de plantains frits, de manioc ou de riz blanc.</h3>
+        <h2>Bon appétit !</h2>
+    </main>
+
+    <footer>
+        <div id="footer-logo-nav">
+            <a href="acceuil.html">
+                <img class="logo" src="../img/logo2.png" alt="Logo">
+            </a>
+            <nav>
+                <a href="menusemaine.html">Menu de la semaine</a>
+                <a href="categories.html">Recettes par catégorie</a>
+                <a href="apropos.html">À propos</a>
+                <a href="don.html">Faire un don</a>
+            </nav>
+        </div>
+        <p>© 2025 Plate&Place - Tous droits réservés</p>
+    </footer>
+</body>
+</html>

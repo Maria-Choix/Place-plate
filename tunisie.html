@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tunisie</title>
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+
+    <body>
+        <header>
+            <a href="acceuil.html">
+                <img class="logo" src="../img/logo2.png" alt="Logo">
+            </a>
+            <form class="search-form" action="#" method="get" onsubmit="cherchePays();">
+                <input type="text" id="barreRecherche" placeholder="Rechercher une place..." name="q">
+                <button id="boutonsearch" type="submit">Go</button>
+            </form>
+            <nav>
+                <a href="menusemaine.html">Menu de la semaine</a>
+                <a href="categories.html">Recettes par catégorie</a>
+                <a href="apropos.html">À propos</a>
+                <a href="don.html">Faire un don</a>
+            </nav>
+        </header>
+
+        <section class="histoire">
+            <h1> <a class="nompays">Tunisie</a>, terres de Soleil, héritage millénaire et métissage culturel</h1>
+            <p class="citation"> (Psst..Cliquez sur les images pour en savoir plus !)</p><br> 
+
+            <div class="ligne pays1-container">
+            <a href="https://www.adayintheworld.fr/femmes-berberes-de-tunisie/"> <img src="../img/img1tunisie.jpeg" alt="Visuel 1" class="vignette"></a>
+                
+                <p class="pays1">La Tunisie puise ses origines dans l’Antiquité méditerranéenne : peuplée d’abord par des Berbères, elle vit naître la puissante cité de Carthage au IXᵉ siècle av. J.-C., qui rivalisa avec Rome avant d’être détruite en 146 av. J.-C. Par la suite, le pays fut intégré à l’Empire romain, puis christianisé, avant de connaître la conquête arabe au VIIᵉ siècle, qui y introduisit l’islam et la langue arabe. Au fil des siècles, la Tunisie passa sous domination hafside, ottomane et finalement française (1881–1956), jusqu’à ce qu’elle recouvre son indépendance le 20 mars 1956, jetant les bases d’un État moderne et laïc.</p>
+            </div>
+            
+            <div class="ligne pays2-container">
+                <a href="https://fr.wikipedia.org/wiki/Portail:Tunisie#/media/Fichier:Assemblée_des_représentants_du_peuple_مجلس_نواب_الشعب.jpg"><img src="../img/img2tunisie.jpeg" alt="Visuel 2" class="vignette"> </a>
+                <p class="pays2">Depuis l’indépendance du 20 mars 1956 et surtout après la Révolution de 2011 et la Constitution de 2014, la Tunisie a installé un régime pluraliste avec alternances et élections régulières. Le pays doit toutefois faire face à une conjoncture difficile : inflation, chômage des jeunes élevé et endettement croissant, tout en poursuivant des réformes pour moderniser la justice et relancer le tourisme. La société civile, très mobilisée autour des droits de l’homme, de l’égalité des genres et de la décentralisation, joue un rôle clé dans la préservation et l’approfondissement de ces acquis démocratiques.</p>
+            </div>
+            
+            <div class="ligne pays3-container">
+                <a href="https://www.youtube.com/watch?v=F7RR656Dqe4"><img src="../img/img3tunisie.jpeg" alt="Visuel 3" class="vignette"></a>
+                <p class="pays3">La culture tunisienne reflète ce riche métissage : de l’éclat des sites archéologiques de Dougga et de Carthage aux médinas animées de Tunis, Kairouan et Sfax, chaque lieu raconte une histoire. La musique malouf, héritière de l’Andalousie, côtoie les rythmes modernes et le rap engagé. La gastronomie mêle les saveurs du couscous, brik, poissons méditerranéens et pâtisseries au miel et aux amandes. L’artisanat, des tapis traditionnels aux poteries bleues de Nabeul, témoigne d’un savoir-faire ancestral. Enfin, festivals de cinéma, rencontres de la poésie ou fêtes religieuses (comme l’Aïd et le Mawlid) ponctuent l’année.</p>
+            </div>
+        </section>
+
+        <h2>La salade Mechouia</h2>
+        <section class="ingredients-container"> 
+            <div class =recette> 
+                <img src="../img/mechouia.png" alt="Mechouia" class="plat" >
+            </div>
+            <div class="recette">
+                <h3>Ingrédients</h3>
+                <ul class="ingredients"> 
+                    <li><strong>3</strong> poivrons verts</li>
+                    <li><strong>1</strong>poivron rouge</li>
+                    <li><strong>1</strong>poivron jaune</li>
+                    <li><strong>3</strong> tomates italiennes</li>
+                    <li><strong>½ tasse</strong> (125 ml) de thon en conserve (sans huile)</li>
+                    <li><strong>4</strong> œufs à la coque (j’ai seulement utilisé 2 pour la photo)</li>
+                    <li><strong>quelques</strong> olives noires</li>
+                    <li><strong>2</strong> gousses d’ail écrasées</li>
+                    <li><strong>2 c. à soupe</strong> (30 ml) d’huile d’olive</li>
+                    <li><strong>2 c. à soupe</strong> (30 ml) de jus de citron</li>
+                    <li><strong>1 ½ c. à thé</strong> (8 ml) de cumin</li>
+                    <li><strong>½ c. à thé</strong> (2.5 ml) de pâte d’Harissa</li>
+                    <li><strong>Une pincée</strong> de paprika</li>
+                    <li>sel, poivre au goût</li>
+                </ul> 
+            </div>
+        </section>
+        <section class="tempsrecette-container">
+            <div class="tempsrecette"> 
+                <p >Temps de préparation : 0h30 </p>
+                <p> Nombre de portions : 4 personnes</p>
+            </div>
+        </section>
+        
+        <br><br><br>
+        <h2>Recette </h2><br>
+        <section class="instructions">
+            <ol>
+                <li>Faire griller les tomates et les poivrons au four à 350°F (180°C) ou sur le BBQ à feu doux-moyen pendant 20 minutes ou jusqu’à ce que la peau soit cloquée, un peu noircie et ramollie. Il faut les tourner fréquemment durant la cuisson pour faire décoller la peau.</li>
+                <li>Dans un saladier, mélanger l’ail écrasé, l’huile et le jus de citron avec un fouet.</li>
+                <li>Ajouter le cumin, la pâte d’Harissa, le sel le poivre et fouetter de nouveau. Réserver.</li>
+                <li>Lorsque les poivrons et les tomates sont cuits, laisser refroidir.</li>
+                <li> Retirer la peau et les pépins et déposer la chair dans un robot culinaire.</li>
+                <li>Passer rapidement à la lame 2-3 secondes seulement car on veut les couper grossièrement et non en purée.</li>
+                <li>Ajouter aux ingrédients qui sont dans le saladier et brasser.</li>
+            </ol>
+        </section>
+
+        <h2>Bon appétit !</h2>
+
+        <footer>
+            <div id="footer-logo-nav">
+                <a href="acceuil.html">
+                    <img class="logo" src="../img/logo2.png" alt="Logo" ></a>
+                <nav>
+                    <a href="menusemaine.html">Menu de la semaine</a>
+                    <a href="categories.html">Recettes par catégorie</a>
+                    <a href="apropos.html">À propos</a>
+                    <a href="don.html">Faire un don</a>
+                </nav>
+            </div>
+             
+           
+            <p>© 2025 Plate&Place - Tous droits réservés</p>
+        </footer>
+        
+    </body>
+</html>

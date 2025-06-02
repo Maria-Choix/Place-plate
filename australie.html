@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Australie</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <a href="acceuil.html">
+            <img class="logo" src="../img/logo2.png" alt="Logo">
+        </a>
+        <form class="search-form" action="#" method="get" onsubmit="cherchePays(); return false;">
+            <input type="text" id="barreRecherche" placeholder="Rechercher une place..." name="q">
+            <button id="boutonsearch" type="submit">Go</button>
+        </form>
+        <nav>
+            <a href="menusemaine.html">Menu de la semaine</a>
+            <a href="categories.html">Recettes par catégorie</a>
+            <a href="apropos.html">À propos</a>
+            <a href="don.html">Faire un don</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="histoire">
+            <h1>
+                <a class="nompays">Australie</a>, terre du Dreamtime et du soleil brûlant, du désert rouge aux métropoles océaniques
+            </h1>
+            <p class="citation">(Psst..Cliquez sur les images pour en savoir plus !)</p>
+
+            <div class="ligne pays1-container">
+                <a href="https://artark.com.au/fr/pages/aboriginal-art-history">
+                    <img src="../img/img1australie.png" alt="Visuel 1" class="vignette">
+                </a>
+                <p class="pays1">
+                    Bien avant l’arrivée des Européens, le continent australien était habité depuis au moins 65 000 ans par les peuples aborigènes,
+                    porteurs de traditions orales et artistiques (peintures rupestres, chant du « Dreamtime »). En 1606, les navigateurs hollandais
+                    furent les premiers Européens à cartographier ses côtes (« New Holland »), puis James Cook prit possession de la côte est
+                    pour le Royaume-Uni en 1770. À partir de 1788, des flottes pénitentiaires fondèrent les premières colonies britanniques,
+                    menant progressivement à la création de six États fédérés et de deux territoires avant la fédération en 1901, date de naissance
+                    du Commonwealth d’Australie.
+                </p>
+            </div>
+
+            <div class="ligne pays2-container">
+                <a href="https://odysseedelaterre.fr/grande-barriere-corail-australie/">
+                    <img src="../img/img2australie.jpeg" alt="Visuel 2" class="vignette">
+                </a>
+                <p class="pays2">
+                    Aujourd’hui, l’Australie est une monarchie constitutionnelle et une fédération parlementaire de 26 millions d’habitants,
+                    dirigée par un Premier ministre et un gouverneur-général représentant le Roi du Royaume-Uni. Son économie diversifiée repose
+                    sur l’exploitation minière (fer, charbon, or), l’agriculture (blé, laine, vin) et un important secteur des services (tourisme, finance).
+                    Membre du G20, elle fait face à des enjeux majeurs : transition énergétique, protection de la grande barrière de corail,
+                    inégalités sociales (zones rurales et populations aborigènes) et urbanisation croissante de ses grandes métropoles
+                    (Sydney, Melbourne, Brisbane).
+                </p>
+            </div>
+
+            <div class="ligne pays3-container">
+                <a href="https://www.voyage-australie.com/tout-savoir/evenements-festivals">
+                    <img src="../img/img3australie.jpeg" alt="Visuel 3" class="vignette">
+                </a>
+                <p class="pays3">
+                    Mosaïque multiculturelle, l’Australie conjugue héritages aborigènes (didgeridoo, dot painting), traditions britanniques (cricket, afternoon tea)
+                    et influences d’immigration (asiatique, européenne, moyen-orientale). Les festivals nationaux — NAIDOC Week, Dreaming Festival —
+                    mettent en lumière l’art et la musique aborigènes, tandis que les événements sportifs (Australian Open, Melbourne Cup) rythment
+                    la vie collective. Côté gastronomie, le « barbie » (barbecue), le lamington et le pavlova incarnent l’art de vivre à l’australienne,
+                    entre convivialité et respect de la nature.
+                </p>
+            </div>
+        </section>
+
+        <h2>La Pavlova</h2>
+
+        <section class="ingredients-container">
+            <div class="recette">
+                <img src="../img/pavlova.jpeg" alt="Pavlova" class="plat">
+            </div>
+            <div class="recette">
+                <h3>Ingrédients</h3>
+                <ul class="ingredients">
+                    <li><strong>4</strong> blancs d'œuf</li>
+                    <li><strong>200 g</strong> de sucre en poudre</li>
+                    <li><strong>1 c. à c.</strong> de vinaigre blanc</li>
+                    <li><strong>1 c. à c.</strong> de fécule de maïs</li>
+                    <li><strong>1 c. à c.</strong> d'extrait de vanille (facultatif)</li>
+                    <li><strong>250 ml</strong> de crème entière liquide <strong>(minimum 30% MG)</strong></li>
+                    <li><strong>2 c. à s.</strong> de sucre glace</li>
+                    <li>Fruits frais au choix (fruits rouges, mangue, kiwi, fruits de la passion, etc.)</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="tempsrecette-container">
+            <div class="tempsrecette">
+                <p>Temps de préparation : 2h45</p>
+                <p>Nombre de portions : 6 à 8 personnes</p>
+            </div>
+        </section>
+
+        <h2>Recette</h2>
+        <section class="instructions">
+            <ol>
+                <li>Préchauffez le four à 120 °C (chaleur tournante).</li>
+                <li>Montez les blancs en neige ferme, puis ajoutez progressivement le sucre tout en continuant de battre jusqu'à obtenir une meringue lisse, brillante et ferme.</li>
+                <li>Incorporez le vinaigre, la fécule et la vanille à la spatule délicatement.</li>
+                <li>Déposez la meringue au centre du cercle sur la plaque et formez un nid (l'extérieur doit être plus haut que le centre).</li>
+                <li>Enfournez 1h15 à 120°C, sans ouvrir la porte. Ensuite, laissez refroidir dans le four éteint, porte entrouverte, pendant 1h.</li>
+                <li>Montez la crème en chantilly.</li>
+                <li>Disposez la crème chantilly au centre seulement pour garder le bord croustillant.</li>
+                <li>Découpez les fruits et disposez-les juste avant de servir pour éviter qu'ils détrempent la meringue.</li>
+            </ol>
+        </section>
+
+        <h2>Bon appétit !</h2>
+    </main>
+
+    <footer>
+        <div id="footer-logo-nav">
+            <a href="acceuil.html">
+                <img class="logo" src="../img/logo2.png" alt="Logo">
+            </a>
+            <nav>
+                <a href="menusemaine.html">Menu de la semaine</a>
+                <a href="categories.html">Recettes par catégorie</a>
+                <a href="apropos.html">À propos</a>
+                <a href="don.html">Faire un don</a>
+            </nav>
+        </div>
+        <p>© 2025 Plate&Place - Tous droits réservés</p>
+    </footer>
+</body>
+</html>

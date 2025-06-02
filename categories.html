@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <a href="acceuil.html">
+            <img class="logo" src="../img/logo2.png" alt="Logo">
+        </a>
+        <form class="search-form" action="#" method="get" onsubmit="cherchePays(); return(false)">
+            <input type="text" id="barreRecherche" placeholder="Rechercher une place..." name="q">
+            <button id="boutonsearch" type="submit">Go</button>
+        </form>
+        <nav>
+            <a href="menusemaine.html">Menu de la semaine</a>
+            <a href="categories.html">Recettes par catégorie</a>
+            <a href="apropos.html">À propos</a>
+            <a href="don.html">Faire un don</a>
+        </nav>
+    </header>
+
+    <section id="carousel">
+        <img src="../img/bouton.png" class="bouton" id="d" alt="Suivant">
+        <div id="carousel-content">
+            <div class="slide">
+                <h3 class="in-cat">Entrées</h3>
+                <a href="colombie.html"><p>Colombie : Arepas de choclo</p></a>
+            </div>
+            <div class="slide">
+                <h3 class="in-cat">Plats</h3>
+                <a href="cameroun.html"><p>Cameroun : Ndolé</p></a>
+                <a href="tunisie.html"><p>Tunisie : Salade Mechouia</p></a>
+                <a href="nigeria.html"><p>Nigeria : Soupe Egusi</p></a>
+                <a href="chine.html"><p>Chine : Peking Duck</p></a>
+            </div>
+            <div class="slide">
+                <h3 class="in-cat">Desserts</h3>
+                <a href="australie.html"><p>Australie : Pavlova</p></a>
+                <a href="argentine.html"><p>Argentine : Alfajores</p></a>
+            </div>
+        </div>
+        <img src="../img/bouton.png" class="bouton" id="g" alt="Précédent">
+    </section>
+
+    <footer>
+        <div id="footer-logo-nav">
+            <a href="acceuil.html">
+                <img class="logo" src="../img/logo2.png" alt="Logo">
+            </a>
+            <nav>
+                <a href="menusemaine.html">Menu de la semaine</a>
+                <a href="categories.html">Recettes par catégorie</a>
+                <a href="apropos.html">À propos</a>
+                <a href="don.html">Faire un don</a>
+            </nav>
+        </div>
+        <p>© 2025 Plate&Place - Tous droits réservés</p>
+    </footer>
+
+    <script src="../scripts/script.js"></script>
+</body>
+</html>

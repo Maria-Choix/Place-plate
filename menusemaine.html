@@ -3,8 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>A venir</title>
+        <title>Menu de la semaine </title>
         <link rel="stylesheet" href="../css/style.css">
+        
     </head>
 
     <body>
@@ -12,7 +13,7 @@
             <a href="acceuil.html">
                 <img class="logo" src="../img/logo2.png" alt="Logo">
             </a>
-            <form class="search-form" action="#" method="get" onsubmit="cherchePays(); return false;">
+            <form class="search-form" action="#" method="get" onsubmit="cherchePays();">
                 <input type="text" id="barreRecherche" placeholder="Rechercher une place..." name="q">
                 <button id="boutonsearch" type="submit">Go</button>
             </form>
@@ -25,7 +26,20 @@
         </header>
 
 
-        <h1 id="avenir">À venir !</h1>
+        <section class="menusemaine-container">
+            <h1> Menu de la Semaine : Recettes du monde en fête</h1> <br>
+            <div class="menusemcol1">
+                <p id="event-name"></p>
+            <main id="recipe-container"> <br></main>
+            </div>
+            <div>
+                
+            </div>
+            
+            
+
+        </section>
+        
 
 
         <footer>
@@ -43,5 +57,10 @@
            
             <p>© 2025 Plate&Place - Tous droits réservés</p>
         </footer>
+
+        <script type="text/javascript" src = "../scripts/script.js"></script>
+    
+
     </body>
- </html>
+
+</html>
